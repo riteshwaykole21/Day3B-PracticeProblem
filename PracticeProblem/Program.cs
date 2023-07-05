@@ -11,6 +11,7 @@ namespace PracticeProblem
         static void Main(string[] args)
         {
             Console.WriteLine("1 : Constructor Demo");
+            Console.WriteLine("2 : Access Modifier Demo");
             Console.WriteLine("Enter A Option");
             int Option = Convert.ToInt32(Console.ReadLine());
             switch(Option)
@@ -18,6 +19,11 @@ namespace PracticeProblem
                 case 1:
                     new Constructors();
                     new Constructors(10,20);
+                    break;
+                case 2:
+                    AccessModifier acc = new AccessModifier();
+                    acc.Numbers(10,20);
+                    acc.Numb(50, 60);
                     break;
             }
             Console.ReadLine();
