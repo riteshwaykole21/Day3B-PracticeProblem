@@ -12,6 +12,7 @@ namespace PracticeProblem
         {
             Console.WriteLine("1 : Constructor Demo");
             Console.WriteLine("2 : Access Modifier Demo");
+            Console.WriteLine("3 : Interface Demo");
             Console.WriteLine("Enter A Option");
             int Option = Convert.ToInt32(Console.ReadLine());
             switch(Option)
@@ -24,6 +25,10 @@ namespace PracticeProblem
                     AccessModifier acc = new AccessModifier();
                     acc.Numbers(10,20);
                     acc.Numb(50, 60);
+                    break;
+                case 3:
+                    Pig pig = new Pig();
+                    pig.animalSound();
                     break;
             }
             Console.ReadLine();
